@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111111;
+    font-family: Roboto, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+.container{
+    width: 400px;
+    background-color: #f9f9fb;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #000;
+    height: 290px;
+    transition: 0.2s;
+}
+
+ #qr-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#qr-header h1{
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+#qr-header p{
+    font-size: 14px;
+    color: #444;
+}
+#qr-form{
+    margin: 20px 15px;
+}
+#qr-form input, #qr-form button{
+    height: 55px;
+    border-radius: 5px;
+    border: 1px solid #c6c6c6;
+    width: 100%;
+    border: none;
+    
+}
+
+#qr-form input{
+    margin-bottom: 24px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+}
+
+#qr-form button{
+    background-color: rgb(109, 208, 109);
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.3s;
+
+}
+#qr-form button:hover{
+    opacity: 1;
+    background-color: rgb(109,238,109);
+    transform: scale(105%);
+}
+
+.container.active{
+    height: 550px;
+}
+.container.active #qr-code{
+    opacity: 1;
+    cursor: pointer;
+
+}
+#qr-code{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    opacity: 0;
+}
+
+@media (max-width: 450px){
+    .container{
+      width: 300px;
+      height: 350px;
+    }
+}
