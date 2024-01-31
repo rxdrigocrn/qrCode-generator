@@ -1,3 +1,3 @@
-### QR Code Generato
+### QR Code Generator
 
 Gerador de QR Code, utilizando uma api de qr code
